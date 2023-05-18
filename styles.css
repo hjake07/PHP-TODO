@@ -1,0 +1,50 @@
+.bigger {
+    font-size:28px;
+    color:black;
+  }
+  .bigger:hover {
+    text-decoration:none;
+    color:black;
+  }
+  .listItem {
+    margin:5px auto;
+    width:400px;
+    text-align:left;
+    font-size:20px;
+    border:1px solid black;
+    border-radius:4px;
+    height:fit-content;
+  }
+  form {
+    margin:0 auto;
+    text-align:center;
+    width:600px;
+
+  }
+  .btn {
+    width:fit-content;
+  }
+  input {
+    width:400px;
+  }
+  .listForm {
+    display:flex;
+    width:500px;
+    padding:20px;
+    background-color:rgb(245,245,245);
+  }
+  .hr {
+    height:1px;
+    width:100%;
+    background-color:black;
+  }
+  .container {
+    background-color:rgb(250,250,250);
+    height:100vh;
+  }
+  .addForm {
+    margin:10px auto;
+  }
+  .fa {
+    fill:white;
+  }
