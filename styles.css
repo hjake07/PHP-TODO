@@ -1,3 +1,8 @@
+body {
+  font-family:sans-serif;
+  margin:0;
+  padding:0;
+}
 .bigger {
     font-size:28px;
     color:black;
@@ -15,36 +20,205 @@
     border-radius:4px;
     height:fit-content;
   }
+  .sticky {
+    position:fixed;
+    background-color: rgb(43, 103, 167);
+    width: 100%;
+    margin:0;
+  }
+  .fa-1x {
+    font-size: 1.5rem;
+  }
+  .navbar-toggler.toggler-example {
+    cursor: pointer;
+  }
+  .dark-blue-text {
+    color: #0A38F5;
+  }
+  .dark-pink-text {
+    color: #AC003A;
+  }
+  .dark-amber-text {
+    color: #ff6f00;
+  }
+  .dark-teal-text {
+    color: #004d40;
+  }
   form {
     margin:0 auto;
     text-align:center;
     width:600px;
-
+  }
+  .imageContainer {
+    display:flex;
+    justify-content: center;
+  }
+  h1 {
+    text-align: center;
+  }
+  nav {
+    color:white;
+  }
+  .card {
+    margin:10px auto;
+    position:relative;
+    /* height:fit-content */
+  }
+  .card-text {
+    padding-bottom:20px;
+  }
+  .card-img-top {
+    height: 200px;
+    object-fit: cover;
+  }
+  .card-title {
+    font-size:1.6rem;
+    padding-bottom:20px;
+    text-align: center;
+  }
+  .hidden {
+    display:none;
+  }
+  .shown {
+    display:block;
+    padding-bottom:20px;
+  }
+  .card-button {
+    position:absolute;
+    bottom:10px;
+    left:10px;
+  }
+  .fishimg {
+    display:flex;
+    margin: 50px auto 0 auto;
+    border-radius: 50%;
+    width:400px;
+    height:400px;
+    object-fit: cover;
+  }
+  
+  img {
+    width: 80%;
+    object-fit: contain;
+  }
+  .heading {
+    text-align: center;
   }
   .btn {
     width:fit-content;
+    height: 38px;
   }
   input {
     width:400px;
+  }
+  .text-center {
+    padding:10px;
+    display:flex;
+    justify-content: center;
   }
   .listForm {
     display:flex;
     width:500px;
     padding:20px;
+    align-items: center;
     background-color:rgb(245,245,245);
+  }
+  .fit-content {
+    width: fit-content !important;
+  }
+  .forminputs {
+    padding:5px;
+    margin:10px;
+    width:300px;
+  }
+  .form {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .parent {
+    display:flex;
+    flex-direction: row;
+    width:100%;
+  }
+  .loginparent {
+    width: 50%;
+    margin:0 auto;
+    margin-top:10px;
+    height: 100vh;
   }
   .hr {
     height:1px;
     width:100%;
     background-color:black;
   }
-  .container {
-    background-color:rgb(250,250,250);
-    height:100vh;
+  .empty {
+    height: 50px;
+    width: 100%;
+    padding:10px;
+  }
+  /* .container {
+    background-color:rgb(49, 46, 46);
+    margin-bottom:100px;
+    padding:50px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius:20px;
+    color:black;
+  } */
+  .a {
+    padding:0 20px;
+  }
+  .buildForm {
+    width:500px;
+    padding:10px;
+    display:flex;
+    flex-direction: column;
+  }
+  .innerDiv {
+    display:flex;
+    flex-direction: column;
+  }
+  .buildForm input {
+    width: 200px;
+
+  }
+  .buildForm textarea {
+    width: 500px;
+    height: 150px;
+    min-width:200px;
+    max-width:700px;;
+  }
+  .buildForm button {
+    width:100px;
+    margin: 0 auto;
+  }
+  .edit {
+    display:none;
+  }
+  div.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:38px;
+    padding:0;
+    width: 38px;;
+  }
+  button {
+    margin:2px;
+  }
+  .spaceDiv {
+    margin: 10px;
   }
   .addForm {
     margin:10px auto;
   }
   .fa {
     fill:white;
+  }
+  .space {
+    display:flex;
+    justify-content: space-between;
+  }
+  ul {
+    list-style-type: circle;
   }

@@ -5,12 +5,12 @@
   <link rel="stylesheet" href="styles.css">
   </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark space">
   <a href=# class="navbar-brand bigger">To Do List</a>
   </nav>
   <form action="add_task.php" method="POST" class="addForm">
   <input type="text" name="task_name" placeholder="Task Name" required>
-  <button class="btn btn-primary" type="submit">Add Task</button>
+  <button class="btn btn-primary fit-content" type="submit">Add Task</button>
 </form>
 <div class="hr"></div>
 <div class="container">
@@ -22,6 +22,7 @@ $dbname = 'PHP-TODO';
 $user = 'postgres';
 $password = 'postgres';
 $query = "SELECT * FROM todos";
+
 $connection = pg_connect("host=$host port=$port dbname=$dbname user=$user password=$password");
 if (!$connection) {
     echo "Failed to connect to the database.";
@@ -36,10 +37,11 @@ if (!$result) {
 while ($row = pg_fetch_assoc($result)) {
   $taskName = $row['todo'];
   $id = $row['id'];
-  echo "<form class=\"listForm\" action=\"remove_task.php\" method=\"POST\"><input type=\"hidden\" value=\"$id\" name=\"task_id\"><p class=\"listItem\" id=\"listItem\">$taskName</p><button class=\"btn btn-danger\" type=\"submit\"><i class=\"fa fa-trash\" aria-hidden=\"true\"></i></button></form>";
+  echo "<form class=\"listForm\" action=\"remove_task.php\" method=\"POST\"><input type=\"hidden\" value=\"$id\" name=\"task_id\"><p class=\"listItem\" id=\"listItem\">$taskName</p><button class=\"btn btn-danger\" type=\"submit\"><i class=\"fa fa-trash\" aria-hidden=\"true\"></i></button><div class=\"btn btn-warning\" onclick=\"edit()\"><i class=\"fa fa-pencil\" aria-hidden=\"true\"></i></div></form><form class=\"edit\" method=\"POST\" action=\"update_task.php\"><input type=\"hidden\" value=\"$id\" name=\"task_id\"><input type=\"text\" name=\"new_task\"><button class=\"btn btn-warning\" onclick=\"edit()\">Edit</button></form>";
 }
 
 ?>
 </div>
+<script src="todo.js"></script>
 </body>
 </html>
